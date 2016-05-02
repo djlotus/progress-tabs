@@ -8,6 +8,7 @@ Only basic HTML elements are used. One class is used for styling. `class="progre
 
 ## Cross-Browser Compliant
 Currently tested on:
+
 **OSX (10.11.4)**
 * Safari (9.1)
 * Firefox (46)
