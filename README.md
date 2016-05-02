@@ -25,6 +25,6 @@ Currently tested on:
 * IE (8, 9, 10, 11, Edge
   * Versions below 11 were tested with F12 tools
 
-**Android (Marshmellow 6.1)**
+**Android (Marshmallow 6.1)**
 * Chrome
 * Default Samsung Browser
