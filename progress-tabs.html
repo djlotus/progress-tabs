@@ -1,0 +1,72 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="utf-8"/>
+      <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+      <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+
+      <title>Progress Tabs</title>
+
+      <link href="/styles/progress-tabs.css" rel="stylesheet"/>
+
+      <script src="/js/progress-tabs.js" type="text/javascript" defer></script>
+      
+   </head>
+
+   <body>
+
+      <main role="main">
+         
+         <h1>Accessible, X-browser Progress Tabs with No-JS Fallback</h1>
+
+         <!--[if lte IE 9]>
+            <style>
+               .progress-tabs {
+                  display: table;
+                  width: 100%;
+               }
+               [data-progress-tab] {
+                  display: table-cell;
+               }
+            </style>
+            <![endif]-->
+         
+         <section class="container">
+            
+            <ul role="tab-list" class="progress-tabs" id="progress-tabs">
+               <li role="tab" id="tab1a-title" aria-controls="tab1a-panel" aria-label="Step one: Plan" aria-selected="true" data-progress-tab="active" tabindex="0"><span>1</span><br /><p>Plan</p></li>
+               <li role="tab" id="tab2a-title" aria-controls="tab2a-panel" aria-label="Step two: Design and Develop" aria-selected="false" data-progress-tab tabindex="0"><span>2</span><br /><p>Design &amp; Develop</p></li>
+               <li role="tab" id="tab3a-title" aria-controls="tab3a-panel" aria-label="Step three: Test" aria-selected="false" data-progress-tab tabindex="0"><span>3</span><br /><p>Test</p></li>
+               <li role="tab" id="tab4a-title" aria-controls="tab4a-panel" aria-label="Step four: Implement" aria-selected="false" data-progress-tab tabindex="0"><span>4</span><br /><p>Implement</p></li>
+            </ul>
+            
+            <div role="tabpanel" id="tab1a-panel" aria-hidden="false" data-progress-panel="active">
+               <hr />
+               <h3>Step 1: Plan</h3>
+               <p>The first step to a successful project is planning. During your initial meeting with the WSDM team we review your project objectives, audience, design and development needs, content, timetable and deliverables.</p>
+            </div>
+            <div role="tabpanel" id="tab2a-panel" aria-hidden="true" data-progress-panel="active">
+               <hr />
+               <h3>Step 2: Design &amp; Develop</h3>
+               <p>WSDM staff create design features and develop applications with your input.</p>
+            </div>
+            <div role="tabpanel" id="tab3a-panel" aria-hidden="true" data-progress-panel="active">
+               <hr />
+               <h3>Step 3: Test</h3>
+               <p>We build your Web pages and/or applications in draft format on the staging server for your review and then make requested revisions.</p>
+            </div>
+            <div role="tabpanel" id="tab4a-panel" aria-hidden="true" data-progress-panel="active">
+               <hr />
+               <h3>Step 4: Implement</h3>
+               <p>Upon your final approval, WSDM take the draft staging version of your project and publishes it live and continues to maintain the project on the Web with updates you submit.</p>
+            </div>
+            
+         </section>
+         
+      </main>
+
+   </body>
+</html>    
