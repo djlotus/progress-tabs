@@ -24,13 +24,13 @@ _____________________________________________________________________*/
    // Set Variables
    // - - - - - - - - - - - - - - - - - - - -
 
-   var tabCollection =						document.querySelectorAll("[data-progress-tab]"), // create collection of tab elements
-   panelCollection =					document.querySelectorAll("[data-progress-panel]"), // create collection of panel elements
+   var tabCollection =              document.querySelectorAll("[data-progress-tab]"), // create collection of tab elements
+   panelCollection =                document.querySelectorAll("[data-progress-panel]"), // create collection of panel elements
 
-   tabs =								      [], // create empty array for tabs collection
-   panels =							      []; // create empty array for panels collection
+   tabs =                           [], // create empty array for tabs collection
+   panels =                         []; // create empty array for panels collection
 
-   // Convert collections to objects; need loop because IE8 does not support Array.prototype.slice.call :(
+   // Convert collections to arrays; need loop because IE8 does not support Array.prototype.slice.call :(
    for (i = 0; i < tabCollection.length; i++) {
       tabs.push(tabCollection[i]);
    }
@@ -38,10 +38,10 @@ _____________________________________________________________________*/
       panels.push(panelCollection[i]);
    }
 
-   var totalTabs =							tabs.length, // total number of tabs
-   tabObjects =							[]; // create empty array for tab objects
+   var totalTabs =                  tabs.length, // total number of tabs
+   tabObjects =                     []; // create empty array for tab objects
 
-   var attrTab =									"data-progress-tab", //  set shorthand for tab attribute
+   var attrTab =                    "data-progress-tab", //  set shorthand for tab attribute
    attrPanel =								"data-progress-panel"; // set shorthand for panel attribute
 
    // Hide all but first panel initially. No JS will display all panels. :)
@@ -77,6 +77,7 @@ _____________________________________________________________________*/
          if (thisTab.tabNumber === 1) { // if the first tab
             thisTab.state = "active"; // set state to "active"
          };
+         // not used yet
          //		if (thisTab.tabNumber === 2) { // if second tab
             //			thisTab.state = ""; // leave state at default
             //		};
@@ -91,6 +92,7 @@ _____________________________________________________________________*/
             thisTab.current.setAttribute(attrTab, ""); // set attribute to active
             thisTab.panelEl.setAttribute(attrPanel, "");
          };
+         // not used yet
          //		if (thisTab.state === "disabled") { // if state is disabled
             //			thisTab.current.setAttribute(attr, "disabled"); // set attribute to active
             //		};
