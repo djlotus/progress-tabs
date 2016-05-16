@@ -28,3 +28,9 @@ Currently tested on:
 **Android (Marshmallow 6.1)**
 * Chrome
 * Default Samsung Browser
+
+##To Do:
+- [x] Cross Browser Support (back to IE gte 8)
+- [ ] Simplify tabs for more generic use
+- [ ] Animate progress
+- [ ] Add form elements
