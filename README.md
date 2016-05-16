@@ -22,7 +22,7 @@ Currently tested on:
 **Windows 7 (64-bit; service pack 1)**
 * Firefox (44.0.2, 46)
 * Chrome (49.0.2623.112)
-* IE (8, 9, 10, 11, Edge
+* IE (8, 9, 10, 11, Edge)
   * Versions below 11 were tested with F12 tools
 
 **Android (Marshmallow 6.1)**
